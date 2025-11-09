@@ -8,7 +8,9 @@ class MySplashScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Center( 
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
           Container(
             width: 250,
@@ -20,7 +22,7 @@ class MySplashScreen1 extends StatelessWidget {
             ),
           ],
         )
-      
+      ),
     );
   }
 }

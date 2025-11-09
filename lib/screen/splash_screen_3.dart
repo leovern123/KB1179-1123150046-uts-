@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'home_login.dart';
 
 
 class MySplashScreen3 extends StatelessWidget {
@@ -18,7 +18,6 @@ class MySplashScreen3 extends StatelessWidget {
             height: 250,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.amber,
               image: DecorationImage(
                   image: AssetImage("assets/images/image3.webp"),
                   fit: BoxFit.cover, 
@@ -97,8 +96,14 @@ class MySplashScreen3 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    // nanti diarahkan ke splash screen 3  
-                                                                      
+                    // nanti diarahkan ke home 
+                     Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomeLogin(),
+                        ),
+                        (Route<dynamic> route) => false,
+                      );                                                     
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),

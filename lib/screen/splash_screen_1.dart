@@ -18,7 +18,6 @@ class MySplashScreen1 extends StatelessWidget {
             height: 250,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.amber,
                image: DecorationImage(
                   image: AssetImage("assets/images/image1.webp"),
                   fit: BoxFit.cover, 

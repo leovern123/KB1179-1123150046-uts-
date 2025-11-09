@@ -37,6 +37,20 @@ class MySplashScreen1 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
+               const SizedBox(height: 10),
+
+               // teks di bawahnya welcome
+            const Text(
+              "Selamat Datang:D\nkami siap membantu!",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 15.0,
+                color: Color.fromARGB(167, 24, 23, 23),
+                height: 1.5, // jarak antar baris
+              ),
+            ),
+
           ],
         )
       ),

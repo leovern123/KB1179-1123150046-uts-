@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'splash_screen_3.dart';
 
 
-class MySplashScreen2 extends StatelessWidget {
-  const MySplashScreen2({super.key});
+
+class MySplashScreen3 extends StatelessWidget {
+  const MySplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MySplashScreen2 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.amber,
               image: DecorationImage(
-                  image: AssetImage("assets/images/image2.webp"),
+                  image: AssetImage("assets/images/image3.webp"),
                   fit: BoxFit.cover, 
                   alignment: Alignment.center, 
                 ),
@@ -43,7 +43,7 @@ class MySplashScreen2 extends StatelessWidget {
 
                // teks di bawahnya welcome
             const Text(
-              "Selamat Datang :D\nkami siap membantu!",
+              "Selamat Datang:D\nkami siap membantu!",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 15.0,
@@ -72,7 +72,7 @@ class MySplashScreen2 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 33, 78, 33), // aktif
+                    color: Color.fromARGB(102, 152, 152, 151), // non-aktif
                   ),
                 ),
                 Container(
@@ -81,7 +81,7 @@ class MySplashScreen2 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(102, 152, 152, 151), // non-aktif
+                    color: Color.fromARGB(255, 33, 78, 33), // aktif
                   ),
                 ),
               ],
@@ -97,10 +97,8 @@ class MySplashScreen2 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    // nanti diarahkan ke splash screen 3                
-                      Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const MySplashScreen3())); 
+                    // nanti diarahkan ke splash screen 3  
+                                                                      
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
